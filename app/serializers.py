@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Employee
+from django.contrib.auth.models import User
 
 
 class EmployeeSerializer(serializers.ModelSerializer):
@@ -17,7 +18,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
         return newEmp
 
 
-class UserSerializer(serializers.Serializer):
-    username = serializers.CharField(max_length=30)
-    email = serializers.EmailField()
-    password = serializers.CharField(max_length=30)
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
