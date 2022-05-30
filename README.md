@@ -1,6 +1,6 @@
 # Django-RestFramework
 
-## Method 1
+## Method 1 (Function Based Views)
 ### Serializer:
 https://github.com/Mrudhulraj/Django-RestFramework/blob/e87bda0b88c03e575981ba51da5f0c1eff0be3de/app/serializers.py#L5-L18
 ### Models:
